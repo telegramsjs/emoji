@@ -1,12 +1,14 @@
-import { find, search, unemojify, emojify } from "./index";
+import { has, find, strip, search, unemojify, emojify } from "./index";
 import type { UnicodeEmoji, EmojiTypeSearch, AliasEmoji } from "./types";
 
-export default { find, search, unemojify, emojify };
+export default { has, find, strip, search, unemojify, emojify };
 export {
   UnicodeEmoji,
   EmojiTypeSearch,
   AliasEmoji,
+  has,
   find,
+  strip,
   search,
   unemojify,
   emojify,

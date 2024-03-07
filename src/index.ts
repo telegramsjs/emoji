@@ -198,12 +198,14 @@ function emojify(text: string): string {
   });
 }
 
-export default { find, search, unemojify, emojify };
+export default { has, find, strip, search, unemojify, emojify };
 export {
   UnicodeEmoji,
   EmojiTypeSearch,
   AliasEmoji,
+  has,
   find,
+  strip,
   search,
   unemojify,
   emojify,
