@@ -2,17 +2,29 @@
   "name": "@telegram.ts/types",
   "version": "1.0.0",
   "description": "Use emoji names instead of Unicode strings",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    "require": "dist/index.js",
-    "import": "dist/index.mjs"
+    "require": "./dist/index.js",
+    "import": "./dist/index.mjs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "files": [
+    "./dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "javascript",
+    "typescript",
+    "emoji",
+    "library",
+    "sempai-07"
+  ],
+  "author": "Sempai<zadmanthegreat@gmail.com>",
   "dependencies": {
     "unicode-emoji-json": "^0.4.0"
   },

@@ -11,6 +11,8 @@ Library for working with emojis in TypeScript.
 
 ```bash
 npm install @telegram.ts/emoji
+# or
+yarn add @telegram.ts/emoji
 ```
 
 ## Usage
