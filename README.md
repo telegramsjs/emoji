@@ -18,7 +18,14 @@ yarn add @telegram.ts/emoji
 ## Usage
 
 ```typescript
-import { find, search, unemojify, emojify } from "@telegram.ts/emoji";
+import {
+  find,
+  search,
+  unemojify,
+  emojify,
+  has,
+  strip,
+} from "@telegram.ts/emoji";
 
 // Find an emoji by its name or alias
 const foundEmoji = find(":heart:");
