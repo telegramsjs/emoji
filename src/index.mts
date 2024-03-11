@@ -1,5 +1,5 @@
-import { has, find, strip, search, unemojify, emojify } from "./index";
-import type { UnicodeEmoji, EmojiTypeSearch, AliasEmoji } from "./types";
+import { has, find, strip, search, unemojify, emojify } from "./index.js";
+import type { UnicodeEmoji, EmojiTypeSearch, AliasEmoji } from "./types.js";
 
 export default { has, find, strip, search, unemojify, emojify };
 export {
