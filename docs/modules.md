@@ -1,6 +1,6 @@
-[@telegram.ts/types](README.md) / Exports
+[@telegram.ts/emoji](README.md) / Exports
 
-# @telegram.ts/types
+# @telegram.ts/emoji
 
 ## Table of contents
 
@@ -31,19 +31,19 @@
 
 #### Defined in
 
-[types.ts:15](https://github.com/telegramsjs/emoji/blob/372e300/src/types.ts#L15)
+[types.ts:15](https://github.com/telegramsjs/emoji/blob/93ea5fb/src/types.ts#L15)
 
-___
+---
 
 ### EmojiTypeSearch
 
-Ƭ **EmojiTypeSearch**: ``"unicode"`` \| ``"emoji"`` \| ``"all"``
+Ƭ **EmojiTypeSearch**: `"unicode"` \| `"emoji"` \| `"all"`
 
 #### Defined in
 
-[types.ts:13](https://github.com/telegramsjs/emoji/blob/372e300/src/types.ts#L13)
+[types.ts:13](https://github.com/telegramsjs/emoji/blob/93ea5fb/src/types.ts#L13)
 
-___
+---
 
 ### UnicodeEmoji
 
@@ -51,11 +51,11 @@ ___
 
 #### Index signature
 
-▪ [key: `string`]: \{ `alias?`: `string` ; `emoji_version`: `string` ; `group`: `string` ; `name`: `string` ; `skin_tone_support`: `boolean` ; `slug`: `string` ; `unicode_version`: `string`  }
+▪ [key: `string`]: \{ `alias?`: `string` ; `emoji_version`: `string` ; `group`: `string` ; `name`: `string` ; `skin_tone_support`: `boolean` ; `slug`: `string` ; `unicode_version`: `string` }
 
 #### Defined in
 
-[types.ts:1](https://github.com/telegramsjs/emoji/blob/372e300/src/types.ts#L1)
+[types.ts:1](https://github.com/telegramsjs/emoji/blob/93ea5fb/src/types.ts#L1)
 
 ## Variables
 
@@ -65,18 +65,18 @@ ___
 
 #### Type declaration
 
-| Name | Type |
-| :------ | :------ |
-| `emojify` | (`text`: `string`) => `string` |
-| `find` | (`text`: `string`) => [`AliasEmoji`](modules.md#aliasemoji) \| ``null`` |
-| `has` | (`text`: `string`, `emojiType`: [`EmojiTypeSearch`](modules.md#emojitypesearch)) => `boolean` |
-| `search` | (`text`: `string`) => ([`AliasEmoji`](modules.md#aliasemoji) \| ``null``)[] |
-| `strip` | (`text`: `string`, `emojiType`: [`EmojiTypeSearch`](modules.md#emojitypesearch)) => `string` |
-| `unemojify` | (`text`: `string`) => `string` |
+| Name        | Type                                                                                          |
+| :---------- | :-------------------------------------------------------------------------------------------- |
+| `emojify`   | (`text`: `string`) => `string`                                                                |
+| `find`      | (`text`: `string`) => [`AliasEmoji`](modules.md#aliasemoji) \| `null`                         |
+| `has`       | (`text`: `string`, `emojiType`: [`EmojiTypeSearch`](modules.md#emojitypesearch)) => `boolean` |
+| `search`    | (`text`: `string`) => ([`AliasEmoji`](modules.md#aliasemoji) \| `null`)[]                     |
+| `strip`     | (`text`: `string`, `emojiType`: [`EmojiTypeSearch`](modules.md#emojitypesearch)) => `string`  |
+| `unemojify` | (`text`: `string`) => `string`                                                                |
 
 #### Defined in
 
-[index.ts:201](https://github.com/telegramsjs/emoji/blob/372e300/src/index.ts#L201)
+[index.ts:201](https://github.com/telegramsjs/emoji/blob/93ea5fb/src/index.ts#L201)
 
 ## Functions
 
@@ -88,8 +88,8 @@ Replace Unicode characters with their respective emoji codes.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description                                            |
+| :----- | :------- | :----------------------------------------------------- |
 | `text` | `string` | The text to convert Unicode characters to emoji codes. |
 
 #### Returns
@@ -106,25 +106,25 @@ console.log(emojify("I ❤️ coding with emojis!")); // Output: "I :heart: codi
 
 #### Defined in
 
-[index.ts:184](https://github.com/telegramsjs/emoji/blob/372e300/src/index.ts#L184)
+[index.ts:184](https://github.com/telegramsjs/emoji/blob/93ea5fb/src/index.ts#L184)
 
-___
+---
 
 ### find
 
-▸ **find**(`text`): [`AliasEmoji`](modules.md#aliasemoji) \| ``null``
+▸ **find**(`text`): [`AliasEmoji`](modules.md#aliasemoji) \| `null`
 
 Find an emoji by its name or alias.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description                                   |
+| :----- | :------- | :-------------------------------------------- |
 | `text` | `string` | The name or alias of the emoji to search for. |
 
 #### Returns
 
-[`AliasEmoji`](modules.md#aliasemoji) \| ``null``
+[`AliasEmoji`](modules.md#aliasemoji) \| `null`
 
 The emoji object if found, otherwise null.
 
@@ -137,9 +137,9 @@ console.log(foundEmoji); // Output: { name: 'red heart', alias: ':heart:', slug:
 
 #### Defined in
 
-[index.ts:18](https://github.com/telegramsjs/emoji/blob/372e300/src/index.ts#L18)
+[index.ts:18](https://github.com/telegramsjs/emoji/blob/93ea5fb/src/index.ts#L18)
 
-___
+---
 
 ### has
 
@@ -149,10 +149,10 @@ Check if a text contains emojis of a specified type.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `text` | `string` | `undefined` | The text to search for emojis. |
-| `emojiType` | [`EmojiTypeSearch`](modules.md#emojitypesearch) | `"all"` | The type of emojis to search for: "unicode", "emoji", or "all". Default is "all". |
+| Name        | Type                                            | Default value | Description                                                                       |
+| :---------- | :---------------------------------------------- | :------------ | :-------------------------------------------------------------------------------- |
+| `text`      | `string`                                        | `undefined`   | The text to search for emojis.                                                    |
+| `emojiType` | [`EmojiTypeSearch`](modules.md#emojitypesearch) | `"all"`       | The type of emojis to search for: "unicode", "emoji", or "all". Default is "all". |
 
 #### Returns
 
@@ -170,25 +170,25 @@ console.log(has("I ❤️ coding with emojis!", "emoji")); // Output: true
 
 #### Defined in
 
-[index.ts:49](https://github.com/telegramsjs/emoji/blob/372e300/src/index.ts#L49)
+[index.ts:49](https://github.com/telegramsjs/emoji/blob/93ea5fb/src/index.ts#L49)
 
-___
+---
 
 ### search
 
-▸ **search**(`text`): ([`AliasEmoji`](modules.md#aliasemoji) \| ``null``)[]
+▸ **search**(`text`): ([`AliasEmoji`](modules.md#aliasemoji) \| `null`)[]
 
 Search for emojis in a text and return an array of emoji objects.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description                    |
+| :----- | :------- | :----------------------------- |
 | `text` | `string` | The text to search for emojis. |
 
 #### Returns
 
-([`AliasEmoji`](modules.md#aliasemoji) \| ``null``)[]
+([`AliasEmoji`](modules.md#aliasemoji) \| `null`)[]
 
 An array of emoji objects found in the text.
 
@@ -200,9 +200,9 @@ console.log(search("I ❤️ coding with emojis!")); // Output: [ { name: 'red h
 
 #### Defined in
 
-[index.ts:132](https://github.com/telegramsjs/emoji/blob/372e300/src/index.ts#L132)
+[index.ts:132](https://github.com/telegramsjs/emoji/blob/93ea5fb/src/index.ts#L132)
 
-___
+---
 
 ### strip
 
@@ -212,10 +212,10 @@ Remove emojis from a text based on the specified type.
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `text` | `string` | `undefined` | The text from which to remove emojis. |
-| `emojiType` | [`EmojiTypeSearch`](modules.md#emojitypesearch) | `"all"` | The type of emojis to remove: "unicode", "emoji", or "all". Default is "all". |
+| Name        | Type                                            | Default value | Description                                                                   |
+| :---------- | :---------------------------------------------- | :------------ | :---------------------------------------------------------------------------- |
+| `text`      | `string`                                        | `undefined`   | The text from which to remove emojis.                                         |
+| `emojiType` | [`EmojiTypeSearch`](modules.md#emojitypesearch) | `"all"`       | The type of emojis to remove: "unicode", "emoji", or "all". Default is "all". |
 
 #### Returns
 
@@ -233,9 +233,9 @@ console.log(strip("I ❤️ coding with emojis!", "emoji")); // Output: "I ❤�
 
 #### Defined in
 
-[index.ts:92](https://github.com/telegramsjs/emoji/blob/372e300/src/index.ts#L92)
+[index.ts:92](https://github.com/telegramsjs/emoji/blob/93ea5fb/src/index.ts#L92)
 
-___
+---
 
 ### unemojify
 
@@ -245,8 +245,8 @@ Replace emoji codes with their respective Unicode characters.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description                                            |
+| :----- | :------- | :----------------------------------------------------- |
 | `text` | `string` | The text to convert emoji codes to Unicode characters. |
 
 #### Returns
@@ -263,4 +263,4 @@ console.log(unemojify(":heart: :smile:")); // Output: "❤️ 😊"
 
 #### Defined in
 
-[index.ts:162](https://github.com/telegramsjs/emoji/blob/372e300/src/index.ts#L162)
+[index.ts:162](https://github.com/telegramsjs/emoji/blob/93ea5fb/src/index.ts#L162)

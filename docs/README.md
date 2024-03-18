@@ -1,4 +1,4 @@
-@telegram.ts/types / [Exports](modules.md)
+@telegram.ts/emoji / [Exports](modules.md)
 
 # @telegram.ts/emoji
 
