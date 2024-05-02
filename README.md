@@ -1,7 +1,7 @@
 # @telegram.ts/emoji
 
 [![NPM Version](https://img.shields.io/npm/v/@telegram.ts/emoji)](https://www.npmjs.com/package/@telegram.ts/emoji)
-[![Bot API](https://img.shields.io/badge/Bot%20API-v.7.1-00aced.svg?style=flat-square&logo=telegram)](https://core.telegram.org/bots/api)
+[![Bot API](https://img.shields.io/badge/Bot%20API-v.7.2-00aced.svg?style=flat-square&logo=telegram)](https://core.telegram.org/bots/api)
 [![NPM Downloads](https://img.shields.io/npm/dt/@telegram.ts/emoji.svg?maxAge=3600)](https://www.npmjs.com/package/@telegram.ts/emoji)
 [![License](https://img.shields.io/npm/l/@telegram.ts/emoji)](https://github.com/telegramsjs/plugins/blob/main/LICENSE)
 
@@ -80,3 +80,7 @@ Replace Unicode characters with their respective emoji codes.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/telegramsjs/emoji/blob/main/LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please create a `GitHub` issue or submit a pull request. Additionally, feel free to reach out to me on Telegram via my username `@SempaiJS` or on Discord using my username `sempaika_chess`.

@@ -1,3 +1,4 @@
+import { version } from "../package.json";
 import type { UnicodeEmoji, EmojiTypeSearch, AliasEmoji } from "./types";
 const emojiJSON: UnicodeEmoji = require("unicode-emoji-json");
 
@@ -198,7 +199,7 @@ function emojify(text: string): string {
   });
 }
 
-export default { has, find, strip, search, unemojify, emojify };
+export default { has, find, strip, search, unemojify, emojify, version };
 export {
   UnicodeEmoji,
   EmojiTypeSearch,
@@ -209,4 +210,5 @@ export {
   search,
   unemojify,
   emojify,
+  version,
 };
