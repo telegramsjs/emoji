@@ -1,7 +1,6 @@
 # @telegram.ts/emoji
 
 [![NPM Version](https://img.shields.io/npm/v/@telegram.ts/emoji)](https://www.npmjs.com/package/@telegram.ts/emoji)
-[![Bot API](https://img.shields.io/badge/Bot%20API-v.7.2-00aced.svg?style=flat-square&logo=telegram)](https://core.telegram.org/bots/api)
 [![NPM Downloads](https://img.shields.io/npm/dt/@telegram.ts/emoji.svg?maxAge=3600)](https://www.npmjs.com/package/@telegram.ts/emoji)
 [![License](https://img.shields.io/npm/l/@telegram.ts/emoji)](https://github.com/telegramsjs/plugins/blob/main/LICENSE)
 
@@ -50,32 +49,6 @@ console.log(unemojify(":heart: :smile:")); // Output: "❤️ 😊"
 // Replace Unicode characters with their respective emoji codes
 console.log(emojify("I ❤️ coding with emojis!")); // Output: "I :heart: coding with :smile:!"
 ```
-
-## API
-
-### find(text: string): AliasEmoji | null
-
-Find an emoji by its name or alias.
-
-### has(text: string, emojiType?: EmojiTypeSearch): boolean
-
-Check if a text contains emojis of a specified type.
-
-### strip(text: string, emojiType?: EmojiTypeSearch): string
-
-Remove emojis from a text based on the specified type.
-
-### search(text: string): (AliasEmoji | null)[]
-
-Search for emojis in a text and return an array of emoji objects.
-
-### unemojify(text: string): string
-
-Replace emoji codes with their respective Unicode characters.
-
-### emojify(text: string): string
-
-Replace Unicode characters with their respective emoji codes.
 
 ## License
 
